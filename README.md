@@ -1,2 +1,2 @@
 # paper
-A repo for some implementation of papers's network structure
+A repo for  implementation of Mlp-mixer
