@@ -7,7 +7,7 @@ from .layers import Mlp,DropPath,Identity,PatchEmbed,lecun_normal_,to_2tuple
 from paddle.nn.initializer import Constant,Normal,XavierUniform
 from .helpers import named_apply
 from .registry import register_model
-# from .helpers import build_model_with_cfg
+
 def _cfg(url='', **kwargs):
     return {
         'url': url,
@@ -170,34 +170,6 @@ def _init_weights(module: nn.Layer, name: str, head_bias: float = 0., flax=False
         # NOTE if a parent module contains init_weights method, it can override the init of the
         # child modules as this will be called in depth-first order.
         module.init_weights()
-
-
-def checkpoint_filter_fn(state_dict, model): # 修改谁到谁的？stem是啥
-    """ Remap checkpoints if needed """
-    if 'patch_embed.proj.weight' in state_dict:
-        # Remap FB ResMlp models -> timm
-        out_dict = {}
-        for k, v in state_dict.items():
-            k = k.replace('patch_embed.', 'stem.')
-            k = k.replace('attn.', 'linear_tokens.')
-            k = k.replace('mlp.', 'mlp_channels.')
-            k = k.replace('gamma_', 'ls')
-            if k.endswith('.alpha') or k.endswith('.beta'):
-                v = v.reshape(1, 1, -1)
-            out_dict[k] = v
-        return out_dict
-    return state_dict
-
-# 模型权重配置
-# def _create_mixer(variant, pretrained=False, **kwargs):
-#     if kwargs.get('features_only', None):
-#         raise RuntimeError('features_only not implemented for MLP-Mixer models.')
-#     model = build_model_with_cfg(
-#         MlpMixer, variant, pretrained, # variant是模型名
-#         default_cfg=default_cfgs[variant], # 去除默认config中对应模型名的配置（主要是预训练权重的url，有的没有）
-#         pretrained_filter_fn=checkpoint_filter_fn,
-#         **kwargs)
-#     return model
 
 
 def _create_mixer(variant, pretrained=False, **kwargs):
