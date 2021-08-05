@@ -11,7 +11,7 @@
 ```
 python main.py --config ./conf/base.yaml --mode train
 或
-./run.sh 0
+./run.sh 1
 ```
 
 ## Evaluate
@@ -19,7 +19,7 @@ python main.py --config ./conf/base.yaml --mode train
 ```
 python main.py  --config ./conf/base.yaml --mode eval
 或
-./run.sh 1
+./run.sh 2
 ```
 
 ## Link
