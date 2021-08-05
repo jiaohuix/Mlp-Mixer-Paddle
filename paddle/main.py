@@ -10,7 +10,7 @@ parser.add_argument('-m','--mode',default='eval',type=str,choices=['train','eval
 args=parser.parse_args()
 
 def main(args):
-    same_seeds(seed=1024)
+    same_seeds(seed=2021)
     conf = yaml.load(open(args.config, 'r', encoding='utf-8'), Loader=yaml.FullLoader)
     logger.info('Prep | Loading datasets...')
     train_loader,dev_loader=prep_loader(conf)
