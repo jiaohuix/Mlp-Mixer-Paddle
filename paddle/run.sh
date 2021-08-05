@@ -1,5 +1,5 @@
 #/bin/bash
-stage=0
+stage=1
 CONFIG_FILE="conf/base.yaml"
 # 获取stage
 if [ ! -z $1 ];then
@@ -7,7 +7,7 @@ if [ ! -z $1 ];then
 fi
 
 # 训练
-if [ $stage -le 0 ];then
+if [ $stage -le 1 ];then
   echo ================================================================================
   echo "                    Stage 1: Training Cifar10 Classifier... "
   echo ================================================================================
@@ -15,7 +15,7 @@ if [ $stage -le 0 ];then
 fi
 
 # 评估
-if [ $stage -le 1 ];then
+if [ $stage -le 2 ];then
   echo ================================================================================
   echo "                    Stage 2: Evaluating Cifar10 Classifier...      "
   echo ================================================================================
