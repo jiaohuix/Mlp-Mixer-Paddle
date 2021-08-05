@@ -1,42 +1,63 @@
+'''
+任务：复现mlp-mixer b16
+数据集：cifar10
+精度：在imagenet1k上96.72% ;在imagenet21k上96.82% (迁移学习)
+'''
 import os
 import time
+import yaml
 import random
 import paddle
-import paddle.nn as nn
-from tqdm import tqdm
 import numpy as np
 import paddle.vision.transforms as T
+from models import mixer_b16_224_in1k,mixer_b16_224_in21k
 import matplotlib.pyplot as plt
-from utils import logger
+import paddle.nn as nn
+from tqdm import tqdm
+conf = yaml.load(open('./conf/base.yaml', 'r', encoding='utf-8'), Loader=yaml.FullLoader)
 
-def prep_loader(conf):
-    IMAGENET_DEFAULT_MEAN = (0.485, 0.456, 0.406)
-    IMAGENET_DEFAULT_STD = (0.229, 0.224, 0.225)
-    mean = list(map(lambda x: x * 255, IMAGENET_DEFAULT_MEAN))
-    std = list(map(lambda x: x * 255, IMAGENET_DEFAULT_STD))
-    transform1 = T.Compose([T.Resize(size=(224, 224)),
-                            T.RandomHorizontalFlip(0.5),
-                            T.Transpose(order=(2, 0, 1)),
-                            T.Normalize(mean=mean, std=std)])
-    transform2 = T.Compose([T.Resize(size=((224, 224))),
-                            T.Transpose(order=(2, 0, 1)),
-                            T.Normalize(mean=mean, std=std)])
+## 一、数据加载
+# transform
+IMAGENET_DEFAULT_MEAN = (0.485, 0.456, 0.406)
+IMAGENET_DEFAULT_STD = (0.229, 0.224, 0.225)
+mean = list(map(lambda x: x * 255, IMAGENET_DEFAULT_MEAN))
+std = list(map(lambda x: x * 255, IMAGENET_DEFAULT_STD))
+transform1 = T.Compose([
+    T.Resize(size=(224, 224)),
+    T.RandomHorizontalFlip(0.5),
+    T.Transpose(order=(2, 0, 1)),
+    T.Normalize(mean=mean, std=std)])
+transform2 = T.Compose([
+    T.Resize(size=((224, 224))),
+    T.Transpose(order=(2, 0, 1)),
+    T.Normalize(mean=mean, std=std)])
 
-    # 加载数据
-    train_dataset = paddle.vision.datasets.Cifar10(mode='train', transform=transform1)
-    dev_dataset = paddle.vision.datasets.Cifar10(mode='test', transform=transform2)  # 验证集使用与训练集相同的增强策略，检验模型的泛化能力
-    # 加载dataloader
-    train_loader = paddle.io.DataLoader(train_dataset, batch_size=conf['hparas']['batch_size'], shuffle=True)
-    dev_loader = paddle.io.DataLoader(dev_dataset, batch_size=conf['hparas']['batch_size'], shuffle=False)
-    return train_loader,dev_loader
 
-def same_seeds(seed=1024):
+def seed_paddle(seed=1024):
     seed = int(seed)
     random.seed(seed)
     os.environ['PYTHONHASHSEED'] = str(seed)
     np.random.seed(seed)
     paddle.seed(seed)
+seed_paddle(seed=1024)
 
+# 训练数据集
+#不加transform
+# print(type(train_dataset[0][0]),train_dataset[0][0]) # <class 'PIL.Image.Image'> <PIL.Image.Image image mode=RGB size=32x32 at 0x1C81C66DE48>
+
+# 加载数据
+train_dataset = paddle.vision.datasets.Cifar10(mode='train', transform=transform1)
+dev_dataset = paddle.vision.datasets.Cifar10(mode='test', transform=transform2) #验证集使用与训练集相同的增强策略，检验模型的泛化能力
+# 加载dataloader
+train_loader=paddle.io.DataLoader(train_dataset,batch_size=conf['hparas']['batch_size'],shuffle=True)
+dev_loader=paddle.io.DataLoader(dev_dataset,batch_size=conf['hparas']['batch_size'],shuffle=False)
+
+## 二、模型结构
+model=mixer_b16_224_in1k(pretrained=True,num_classes=10)
+# model=mixer_b16_224_in21k(pretrained=True,num_classes=10)
+
+
+# 三、训练
 def draw_process(title,color,iters,data,label):
     plt.title(title, fontsize=24)
     plt.xlabel("iter", fontsize=20)
@@ -81,14 +102,14 @@ def train(conf,model,train_loader,dev_loader):
                 total_loss.append(float(loss))
                 total_acc.append(float(acc))
                 #打印中间过程
-                logger.info(f"Train | Epoch: [{epoch+1}/{max_epochs}] | Step: [{steps}/{total_steps}]"
+                print(f"Cifar10 Train| Epoch: [{epoch+1}/{max_epochs}] | Step: [{steps}/{total_steps}]"
                       f" Loss: {float(loss):.4f} | Acc: {float(acc):.4f} | Speed:{conf['hparas']['log_steps']/(time.time()-tic_train):.2f} step/s")
                 tic_train = time.time()
 
             #保存模型参数
             if steps % conf['hparas']["save_steps"] == 0:
                 save_path = os.path.join(conf['hparas']["save_dir"],'model_{}.pdparams'.format(steps))
-                logger.info(f'Train | Save model to: ' + save_path)
+                print(f'Cifar10 Train | Save model to: ' + save_path)
                 paddle.save(model.state_dict(),save_path)
             # 评估模型
             if steps % conf['hparas']["val_steps"] == 0:
@@ -113,5 +134,8 @@ def evaluate(model,data_loader):
         correct+=np.sum(pred==labels)
     loss=loss/len(data_loader)
     acc=correct/len(data_loader.dataset)
-    logger.info(f'Eval | Loss: {loss:.4f} | Acc: {acc:.4f}')
+    print(f'Cifar10 Eval | Loss: {loss:.4f} | Acc: {acc:.4f}')
     model.train()
+
+if __name__ == '__main__':
+    train(conf,model,train_loader,dev_loader)

@@ -2,7 +2,7 @@ import yaml
 import argparse
 from scrips import same_seeds,prep_loader,train,evaluate
 from models import build_model
-from utils.logger import logger
+from utils import logger
 
 parser = argparse.ArgumentParser(description='Training Config', add_help=True)
 parser.add_argument('-c', '--config', default='conf/base.yaml', type=str, metavar='FILE',help='yaml file path')
