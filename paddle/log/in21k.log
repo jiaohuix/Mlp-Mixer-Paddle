@@ -1,0 +1,157 @@
+ifar10 Train| Epoch: [1/2] | Step: [50/6250] Loss: 2.0279 | Acc: 0.6388 | Speed:7.91 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [100/6250] Loss: 1.6730 | Acc: 0.7656 | Speed:7.80 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [150/6250] Loss: 1.3224 | Acc: 0.8142 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [200/6250] Loss: 0.9854 | Acc: 0.8431 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [250/6250] Loss: 0.6404 | Acc: 0.8622 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [300/6250] Loss: 0.4868 | Acc: 0.8742 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [350/6250] Loss: 0.4631 | Acc: 0.8825 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [400/6250] Loss: 0.2874 | Acc: 0.8898 | Speed:7.99 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [450/6250] Loss: 0.2497 | Acc: 0.8975 | Speed:7.96 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [500/6250] Loss: 0.1946 | Acc: 0.9038 | Speed:7.84 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [550/6250] Loss: 0.2385 | Acc: 0.9078 | Speed:7.94 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [600/6250] Loss: 0.1838 | Acc: 0.9113 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [650/6250] Loss: 0.2716 | Acc: 0.9154 | Speed:7.94 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [700/6250] Loss: 0.5537 | Acc: 0.9179 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [750/6250] Loss: 0.0839 | Acc: 0.9207 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [800/6250] Loss: 0.3333 | Acc: 0.9220 | Speed:7.94 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [850/6250] Loss: 0.2323 | Acc: 0.9243 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [900/6250] Loss: 0.4795 | Acc: 0.9266 | Speed:7.89 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [950/6250] Loss: 0.0708 | Acc: 0.9281 | Speed:7.97 step/s
+  1%|          | 4/625 [00:00<00:56, 10.90it/s]
+Cifar10 Train| Epoch: [1/2] | Step: [1000/6250] Loss: 0.0656 | Acc: 0.9301 | Speed:7.97 step/s
+
+  1%|          | 7/625 [00:00<00:47, 12.94it/s]
+
+  2%|▏         | 10/625 [00:00<00:41, 14.91it/s]
+ 70%|███████   | 439/625 [00:18<00:07, 23.49it/s]
+Cifar10 Train| Epoch: [1/2] | Step: [1100/6250] Loss: 0.1892 | Acc: 0.9330 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1150/6250] Loss: 0.0588 | Acc: 0.9337 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1200/6250] Loss: 0.4107 | Acc: 0.9344 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1250/6250] Loss: 0.2025 | Acc: 0.9355 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1300/6250] Loss: 0.0806 | Acc: 0.9367 | Speed:7.96 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1350/6250] Loss: 0.0444 | Acc: 0.9375 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1400/6250] Loss: 0.1772 | Acc: 0.9380 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1450/6250] Loss: 0.1991 | Acc: 0.9389 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1500/6250] Loss: 0.0479 | Acc: 0.9398 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1550/6250] Loss: 0.0279 | Acc: 0.9407 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1600/6250] Loss: 0.0297 | Acc: 0.9413 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1650/6250] Loss: 0.0678 | Acc: 0.9418 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1700/6250] Loss: 0.0400 | Acc: 0.9426 | Speed:7.99 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1750/6250] Loss: 0.0214 | Acc: 0.9433 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1800/6250] Loss: 0.1611 | Acc: 0.9440 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1850/6250] Loss: 0.0336 | Acc: 0.9447 | Speed:7.99 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1900/6250] Loss: 0.3096 | Acc: 0.9453 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [1950/6250] Loss: 0.0213 | Acc: 0.9459 | Speed:7.96 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2000/6250] Loss: 0.4851 | Acc: 0.9463 | Speed:7.96 step/s
+save model to: ./checkpoints/in2k
+100%|██████████| 625/625 [00:26<00:00, 23.19it/s]
+Cifar10 Eval | Loss: 0.1131 | Acc: 0.9661
+Cifar10 Train| Epoch: [1/2] | Step: [2050/6250] Loss: 0.0383 | Acc: 0.9467 | Speed:1.38 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2100/6250] Loss: 0.0498 | Acc: 0.9470 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2150/6250] Loss: 0.0202 | Acc: 0.9471 | Speed:7.99 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2200/6250] Loss: 0.2496 | Acc: 0.9476 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2250/6250] Loss: 0.3032 | Acc: 0.9480 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2300/6250] Loss: 0.0500 | Acc: 0.9485 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2350/6250] Loss: 0.1179 | Acc: 0.9487 | Speed:7.93 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2400/6250] Loss: 0.0974 | Acc: 0.9490 | Speed:7.94 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2450/6250] Loss: 0.0908 | Acc: 0.9495 | Speed:7.91 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2500/6250] Loss: 0.0587 | Acc: 0.9498 | Speed:7.90 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2550/6250] Loss: 0.2704 | Acc: 0.9503 | Speed:7.88 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2600/6250] Loss: 0.0301 | Acc: 0.9506 | Speed:7.90 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2650/6250] Loss: 0.1156 | Acc: 0.9511 | Speed:7.90 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2700/6250] Loss: 0.0564 | Acc: 0.9515 | Speed:7.92 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2750/6250] Loss: 0.2088 | Acc: 0.9518 | Speed:7.89 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2800/6250] Loss: 0.0290 | Acc: 0.9521 | Speed:7.90 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2850/6250] Loss: 0.2328 | Acc: 0.9524 | Speed:7.89 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2900/6250] Loss: 0.3705 | Acc: 0.9526 | Speed:7.86 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [2950/6250] Loss: 0.0616 | Acc: 0.9530 | Speed:7.86 step/s
+  0%|          | 2/625 [00:00<00:43, 14.47it/s]
+Cifar10 Train| Epoch: [1/2] | Step: [3000/6250] Loss: 0.0104 | Acc: 0.9532 | Speed:7.86 step/s
+
+  1%|          | 5/625 [00:00<00:38, 16.22it/s]
+100%|██████████| 625/625 [00:27<00:00, 22.85it/s]
+Cifar10 Eval | Loss: 0.1306 | Acc: 0.9590
+Cifar10 Train| Epoch: [1/2] | Step: [3050/6250] Loss: 0.0139 | Acc: 0.9534 | Speed:1.48 step/s
+Cifar10 Train| Epoch: [1/2] | Step: [3100/6250] Loss: 0.0223 | Acc: 0.9535 | Speed:7.88 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3150/6250] Loss: 0.0091 | Acc: 0.9925 | Speed:7.85 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3200/6250] Loss: 0.0160 | Acc: 0.9892 | Speed:7.86 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3250/6250] Loss: 0.0316 | Acc: 0.9875 | Speed:7.85 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3300/6250] Loss: 0.0127 | Acc: 0.9868 | Speed:7.85 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3350/6250] Loss: 0.0224 | Acc: 0.9869 | Speed:7.87 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3400/6250] Loss: 0.0406 | Acc: 0.9877 | Speed:7.87 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3450/6250] Loss: 0.0152 | Acc: 0.9871 | Speed:7.90 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3500/6250] Loss: 0.0330 | Acc: 0.9878 | Speed:7.90 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3550/6250] Loss: 0.0331 | Acc: 0.9863 | Speed:7.92 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3600/6250] Loss: 0.1447 | Acc: 0.9861 | Speed:7.93 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3650/6250] Loss: 0.1161 | Acc: 0.9849 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3700/6250] Loss: 0.0075 | Acc: 0.9836 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3750/6250] Loss: 0.0099 | Acc: 0.9840 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3800/6250] Loss: 0.2141 | Acc: 0.9841 | Speed:7.94 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3850/6250] Loss: 0.2424 | Acc: 0.9835 | Speed:7.94 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3900/6250] Loss: 0.3830 | Acc: 0.9831 | Speed:7.96 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [3950/6250] Loss: 0.0432 | Acc: 0.9831 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4000/6250] Loss: 0.1598 | Acc: 0.9829 | Speed:7.97 step/s
+save model to: ./checkpoints/in2k
+100%|██████████| 625/625 [00:27<00:00, 23.06it/s]
+Cifar10 Eval | Loss: 0.1176 | Acc: 0.9633
+Cifar10 Train| Epoch: [2/2] | Step: [4050/6250] Loss: 0.0063 | Acc: 0.9828 | Speed:1.38 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4100/6250] Loss: 0.0132 | Acc: 0.9829 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4150/6250] Loss: 0.1720 | Acc: 0.9830 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4200/6250] Loss: 0.0480 | Acc: 0.9831 | Speed:7.96 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4250/6250] Loss: 0.0086 | Acc: 0.9828 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4300/6250] Loss: 0.0843 | Acc: 0.9830 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4350/6250] Loss: 0.0633 | Acc: 0.9834 | Speed:7.93 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4400/6250] Loss: 0.0512 | Acc: 0.9830 | Speed:7.77 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4450/6250] Loss: 0.0084 | Acc: 0.9830 | Speed:7.92 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4500/6250] Loss: 0.0087 | Acc: 0.9829 | Speed:7.92 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4550/6250] Loss: 0.0088 | Acc: 0.9830 | Speed:7.92 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4600/6250] Loss: 0.0830 | Acc: 0.9829 | Speed:7.94 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4650/6250] Loss: 0.1512 | Acc: 0.9830 | Speed:7.93 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4700/6250] Loss: 0.0075 | Acc: 0.9832 | Speed:7.94 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4750/6250] Loss: 0.1386 | Acc: 0.9833 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4800/6250] Loss: 0.0044 | Acc: 0.9831 | Speed:7.77 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4850/6250] Loss: 0.0058 | Acc: 0.9829 | Speed:7.93 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4900/6250] Loss: 0.0749 | Acc: 0.9827 | Speed:7.92 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [4950/6250] Loss: 0.2108 | Acc: 0.9825 | Speed:7.94 step/s
+  0%|          | 2/625 [00:00<00:42, 14.53it/s]
+Cifar10 Train| Epoch: [2/2] | Step: [5000/6250] Loss: 0.0132 | Acc: 0.9824 | Speed:7.94 step/s
+
+  1%|          | 5/625 [00:00<00:38, 16.31it/s]
+100%|██████████| 625/625 [00:27<00:00, 22.93it/s]
+Cifar10 Eval | Loss: 0.1208 | Acc: 0.9629
+Cifar10 Train| Epoch: [2/2] | Step: [5050/6250] Loss: 0.0158 | Acc: 0.9822 | Speed:1.49 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5100/6250] Loss: 0.1615 | Acc: 0.9823 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5150/6250] Loss: 0.0057 | Acc: 0.9823 | Speed:7.93 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5200/6250] Loss: 0.1578 | Acc: 0.9822 | Speed:7.96 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5250/6250] Loss: 0.0649 | Acc: 0.9823 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5300/6250] Loss: 0.0307 | Acc: 0.9822 | Speed:7.96 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5350/6250] Loss: 0.0223 | Acc: 0.9821 | Speed:7.98 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5400/6250] Loss: 0.0144 | Acc: 0.9820 | Speed:7.96 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5450/6250] Loss: 0.0174 | Acc: 0.9819 | Speed:7.86 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5500/6250] Loss: 0.0095 | Acc: 0.9818 | Speed:7.96 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5550/6250] Loss: 0.0033 | Acc: 0.9818 | Speed:7.96 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5600/6250] Loss: 0.0073 | Acc: 0.9820 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5650/6250] Loss: 0.0132 | Acc: 0.9821 | Speed:7.94 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5700/6250] Loss: 0.0043 | Acc: 0.9821 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5750/6250] Loss: 0.0398 | Acc: 0.9819 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5800/6250] Loss: 0.4418 | Acc: 0.9819 | Speed:7.95 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5850/6250] Loss: 0.0045 | Acc: 0.9820 | Speed:7.77 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5900/6250] Loss: 0.0066 | Acc: 0.9819 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [5950/6250] Loss: 0.2558 | Acc: 0.9818 | Speed:7.94 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [6000/6250] Loss: 0.0047 | Acc: 0.9819 | Speed:7.96 step/s
+save model to: ./checkpoints/in2k
+100%|██████████| 625/625 [00:26<00:00, 23.23it/s]
+Cifar10 Eval | Loss: 0.0945 | Acc: 0.9696
+Cifar10 Train| Epoch: [2/2] | Step: [6050/6250] Loss: 0.3986 | Acc: 0.9819 | Speed:1.38 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [6100/6250] Loss: 0.0168 | Acc: 0.9819 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [6150/6250] Loss: 0.0054 | Acc: 0.9819 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [6200/6250] Loss: 0.0035 | Acc: 0.9819 | Speed:7.97 step/s
+Cifar10 Train| Epoch: [2/2] | Step: [6250/6250] Loss: 0.0644 | Acc: 0.9819 | Speed:8.00 step/s
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/matplotlib/cbook/__init__.py:2349: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  if isinstance(obj, collections.Iterator):
+/opt/conda/envs/python35-paddle120-env/lib/python3.7/site-packages/matplotlib/cbook/__init__.py:2366: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  return list(data) if isinstance(data, collections.MappingView) else data
+
+100%|██████████| 625/625 [00:27<00:00, 23.11it/s]
+Cifar10 Eval | Loss: 0.0922 | Acc: 0.9717
+
