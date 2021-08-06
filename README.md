@@ -4,9 +4,9 @@
 
 ​		本项目用b16规模的mixer，使用在imagenet和imagenet21k上预训练的权重，在cifar10数据集上验证准确率分别达到了96.8%（2epoch）和97.18%（2epoch）。
 
-![curve](https://github.com/MiuGod0126/Mlp-Mixer-Paddle/blob/main/imgs/curve.png)
+![curve](./imgs/curve.png)
 
-![acc](https://github.com/MiuGod0126/Mlp-Mixer-Paddle/blob/main/imgs/acc.png)
+![acc](./imgs/acc.png)
 
 ## Tree
 
