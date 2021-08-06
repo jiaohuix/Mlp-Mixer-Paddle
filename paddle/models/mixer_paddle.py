@@ -29,11 +29,11 @@ default_cfgs = dict(
         url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_mixer_b16_224-76587d61.pth',
     ),
     mixer_b16_224_in21k=_cfg(
-        url='D:/pyprojects/paddle/paper/mixer/ckpt/mixer_b16_224_in21k.pdparams',
+        url='./ckpt/mixer_b16_224_in21k.pdparams',
         num_classes=21843
     ),
     mixer_b16_224_in1k=_cfg(
-        url='D:/pyprojects/paddle/paper/mixer/ckpt/mixer_b16_224_miil_in1k.pdparams',
+        url='./ckpt/mixer_b16_224_miil_in1k.pdparams',
         mean=(0, 0, 0), std=(1, 1, 1), crop_pct=0.875, interpolation='bilinear',
     ),
     mixer_l32_224=_cfg(),
