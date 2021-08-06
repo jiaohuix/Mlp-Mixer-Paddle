@@ -4,14 +4,32 @@
 
 ​		本项目用b16规模的mixer，使用在imagenet和imagenet21k上预训练的权重，在cifar10数据集上验证准确率分别达到了96.8%（2epoch）和97.18%（2epoch）。
 
+![curve](./imgs/curve.png)
 
+![acc](./imgs/acc.png)
+
+## Tree
+
+```
+# 目录结构
+/paddle
+├── align.py # 权重对齐
+├── ckpt/ # 两个预训练模型
+├── conf
+│   └── base.yaml # 配置文件
+├── main.py # 运行
+├── models/ # mixer代码
+├── run.sh # 运行
+├── scrips.py # 加载数据、训练、评估
+└── utils/ # 日志
+```
 
 ## Train
 
 ```
 python main.py --config ./conf/base.yaml --mode train
 或
-./run.sh 1
+./run.sh 0
 ```
 
 ## Evaluate
@@ -19,15 +37,27 @@ python main.py --config ./conf/base.yaml --mode train
 ```
 python main.py  --config ./conf/base.yaml --mode eval
 或
-./run.sh 2
+./run.sh 1
 ```
 
 ## Link
 
-**注：换预训练权重需要修改yaml配置文件里的model name；由于没有存放预训练权重，可以移步aistudio直接运行：**
+**注：**
+
+1.换预训练权重需要修改yaml配置文件里的model name（1k或21k）；
+
+2.预训练权重地址（需要放在运行目录的ckpt里）：
+
+- 百度网盘：链接：https://pan.baidu.com/s/1sLPrOM4WXq2SG23yxWtTeA  提取码：zm5v
+- 迅雷：链接：https://pan.xunlei.com/s/VMgO-nn3fe8WPaw7ZnJ3Z6AZA1 提取码：gsc6
+
+3.可以移步aistudio直接运行：
 
 [aistudio Mlp-Mixer Paddle 复现](https://aistudio.baidu.com/aistudio/projectdetail/2258020)
+
+另：
 
 [Mlp-Mixer论文地址](https://arxiv.org/pdf/2105.01601v4.pdf)
 
 [csdn:Mlp-Mixer简介](https://blog.csdn.net/weixin_43312063/article/details/117250816?spm=1001.2014.3001.5501)
+
