@@ -2,7 +2,7 @@
 
 ​		Mlp-mixer是谷歌5月份提出的基于纯mlp结构的cv框架，用来替代卷积和Transformer里的注意力操作。
 
-​		本项目使用b16规模的mixer，使用在imagenet和imagenet21k上预训练的权重，在cifar10数据集上验证准确率分别达到了97.1%（1epoch）和97.07%的准确率（2epoch）。
+​		本项目用b16规模的mixer，使用在imagenet和imagenet21k上预训练的权重，在cifar10数据集上验证准确率分别达到了97.1%（1epoch）和97.07%（2epoch）。
 
 
 
