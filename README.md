@@ -46,10 +46,12 @@ python main.py  --config ./conf/base.yaml --mode eval
 
 1.换预训练权重需要修改yaml配置文件里的model name（1k或21k）；
 
-2.预训练权重地址（需要放在运行目录的ckpt里）：
+2.权重地址：
 
-- 百度网盘：链接：https://pan.baidu.com/s/1sLPrOM4WXq2SG23yxWtTeA  提取码：zm5v
-- 迅雷：链接：https://pan.xunlei.com/s/VMgO-nn3fe8WPaw7ZnJ3Z6AZA1 提取码：gsc6
+- imagenet预训练权重
+  - 百度网盘链接：https://pan.baidu.com/s/1sLPrOM4WXq2SG23yxWtTeA  提取码：zm5v
+- cifar10迁移训练权重
+  - 百度网盘链接: https://pan.baidu.com/s/13drJv02mF_FGWD-1sbACeQ 提取码: yrsc 
 
 3.可以移步aistudio直接运行：
 
