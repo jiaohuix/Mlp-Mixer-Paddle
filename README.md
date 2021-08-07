@@ -50,9 +50,9 @@ python main.py  --config ./conf/base.yaml --mode eval
 
 - imagenet预训练权重
   - 百度网盘链接：https://pan.baidu.com/s/1sLPrOM4WXq2SG23yxWtTeA  提取码：zm5v
+  - 放到ckpt下
 - cifar10迁移训练权重
   - 百度网盘链接: https://pan.baidu.com/s/13drJv02mF_FGWD-1sbACeQ 提取码: yrsc 
-
 3.可以移步aistudio直接运行：
 
 [aistudio Mlp-Mixer Paddle 复现](https://aistudio.baidu.com/aistudio/projectdetail/2258020)
